@@ -1,0 +1,141 @@
+.sec-config-account{
+
+  position: absolute;
+  right: 0;
+  left: 58px;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.sec-visible{
+  opacity: 1;
+}
+.title-block{
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 2.2em;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  color: rgb(37, 37, 37);
+}
+.circle-blue, .line-blue-bottom, .line-blue-input{
+  width: 20px;
+  height: 10px;
+  border-radius: 100px;
+  margin-left: 15px;
+  display: block;
+  background: linear-gradient(to right bottom, #0070ff , #0034ff );
+}
+.circle-blue:nth-child(2){
+  width: 10px;
+  margin-left: 5px;
+}
+.blc-create-user {
+  min-height: 50%;
+  background: white;
+  box-shadow: 0 0 6px #80808075;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.line-blue-bottom{
+  width: 30%;
+  position: absolute;
+  display: none;
+}
+.svg-input {
+  width: 20px;
+  position: absolute;
+  align-self: flex-end;
+  color: #0034ff;
+}
+.eyes{
+  cursor: pointer;
+}
+.no-display{
+  display: none;
+}
+.input {
+  font-size: 1.1em;
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+.line-blue-input {
+  width: 98%;
+  height: 4px;
+  margin: 0;
+}
+.contain-input {
+  width: min-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contain-input:nth-child(1){
+  margin-right: 30px;
+}
+.contain-two-input {
+  display: flex;
+  flex-direction: row;
+}
+.label {
+  font-size: 0.8em;
+  align-self: self-start;
+  margin-left: 5px;
+}
+.mail-input{
+  width: 100%;
+}
+.bottom-input {
+	margin-top: 20px;
+}
+.mail-input{
+	width: 100%;
+}
+.choice-type{
+  display: flex;
+  flex-direction: row;
+  
+}
+.type-account {
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px 20px;
+	background-color: #80808038;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	justify-content: center;
+	margin-top:30px;
+  transition: 0.3s;
+}
+.type-account:nth-child(1){
+  margin-right: 30px;
+}
+.account-admin, .account-client{
+  color: #9d0208;
+  margin-right: 10px;
+  width: 15px;
+}
+.account-client{
+  color: #3a7d44;
+}
+.radio-select{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  opacity: 0;
+}
+.active-type{
+  background-color: #0033ff60;
+}
