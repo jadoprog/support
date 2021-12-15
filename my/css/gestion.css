@@ -1,10 +1,3 @@
-.blc-account-management {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 61px;
-}
 .nav-account-management {
     display: flex;
     justify-content: space-between;
@@ -12,7 +5,9 @@
 }
 .title-list-gestion {
     display: flex;
-    /* justify-content: space-around; */
+    background: #efefef;
+    box-shadow: #c5c5c5 0 1px 3px;
+    width: 100%;
 }
 .search-account-management {
     height: 25px;
@@ -22,10 +17,6 @@
     width: 95%;
     border: 1px solid #33393e7d;
     margin-bottom: 0;
-}
-.title.account-management {
-    margin-left: 29px;
-    font-size: 1.5em;
 }
 .btn-new-compte{
     margin-right: 29px;
@@ -43,83 +34,186 @@
     height: 30px;
     cursor: pointer;
 }
-
 .blc-search-account-svg-filtre-btn {
     display: flex;
     justify-content: space-between;
     width: 39%;
 }
-
-.blc-filter-modified {
-    display: flex;
-    flex-direction: row;
-    width: 10%;
-}
-
-.separating-text-filter {
-    margin: 0;
-    margin-left: 130px;
-}
 .svg-list{
     width: 15px;
     cursor: pointer;
 }
-/* .filter-modified-account {
-    width: 20%;
-    border-left: solid 1px #a9b7c357;
+.list {
     display: flex;
-    justify-content: center;
-} */
-.part-all-info-account-list {
-    display: flex;
-    align-items: center;
+    padding: 26px;
+    padding-left: 0;
+    width: max-content;
+    margin: 0;
 }
-.list {display: flex;align-items: baseline;}
 .info-account-list {
+    width: 100%;
+    height: 650px;
     display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 138px;
+    flex-direction: row;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .separating-list {
     width: 75%;
     border-color: #e3e3e32e;
 }
 .contain-name-firstname {
-    display: grid;
-    grid-template-columns: 220px;
-    margin-left: 80px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    /* border-bottom: grey solid; */
+    /* justify-content: center; */
 }
-
 .contain-identifiant {
-    display: grid;
-    grid-template-columns: 220px;
-    margin-left: 80px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
 .contain-email {
-    display: grid;
-    grid-template-columns: 220px;
-    margin-left: 80px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
-
 .contain-grade {
-    display: grid;
-    grid-template-columns: 220px;
-    margin-left: 80px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
-
 .contain-status {
-    display: grid;
-    grid-template-columns: 220px;
-    margin-left: 80px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    /* border-bottom: grey solid; */
+    justify-content: center;
 }
-
 .contain-icon-name-firstname {
     display: grid;
     grid-template-columns: 220px;
     margin-left: 80px;
+}
+.part-all-name-firstname {
+    display: flex;
+    padding: 10px;
+    width: max-content;
+    margin: 0;
+    margin-bottom: 10px;
+    align-items: baseline;
+}
+.filter-modified-account.name-firstname-gestion {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.filter-modified-account.identifiant-gestion {
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.filter-modified-account.email-gestion {
+    display: flex;
+    justify-content: center;
+    /* margin-right: 155px; */
+}
+
+.filter-modified-account.grade-gestion {
+    display: flex;
+    justify-content: center;
+    margin-right: 71px;
+}
+
+.filter-modified-account.status-gestion {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+.blc-all-identifiant {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.blc-all-email {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.blc-all-input {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blc-all-name-firstame {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.blc-all-grade {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.list-input {
+    display: flex;
+    width: max-content;
+    margin-bottom: 30px;
+    margin-top: 38px;
+}
+.contain-all-title {
+    position: fixed;
+    background-color: white;
+}
+
+body#body {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.svg-key {width: 40px;height: 20px;}
+
+.svg-card {
+    width: 24px;
+    /* height: 40px; */
+    /* margin-left: 22px; */
+}
+
+.svg-envelope {
+    /* width: 50px; */
+    /* height: 28px; */
+    /* margin-left: -15px; */
+}
+
+.svg-shield {
+    width: 53px;
+    height: 25px;
+    /* margin-left: -20px; */
+}
+
+.svg-check {
+    width: 40px;
+    height: 25px;
+    /* margin-left: -40px; */
+    /* margin-left: -40px; */
+}
+
+.title-list-gestion svg {
+    width: 21px !important;
+    margin-right: 5px;
 }
