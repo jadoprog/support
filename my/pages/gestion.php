@@ -85,8 +85,6 @@
 
 
 
-ODNFOJK
-
 
             <hr class="separating-list">
 
