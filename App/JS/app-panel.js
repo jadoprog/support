@@ -1,5 +1,5 @@
 function menuMobile(){
-
+    
     $('#arrow-account-info-deco').toggleClass('rotate-arrow-top');
     $("#blc-action-profil").toggleClass('visible-blc-action-profil');
 }
@@ -49,8 +49,20 @@ $('.colors-fdr label').click(function (e){
     
     $('.icon-profil-modif')
     switch ($($a).attr("id")) {
-        case value:
-            
+        case "label-color-pink":
+                $('.icon-profil-modif').css('background-color', '#fea2c7');
+            break;
+        case "label-color-blue":
+            $('.icon-profil-modif').css('background-color', '#00a4d7');
+            break;
+        case "label-color-red":
+                $('.icon-profil-modif').css('background-color', '#e94136');
+            break;
+        case "label-color-green":
+                $('.icon-profil-modif').css('background-color', '#488865');
+            break;
+        case "label-color-yellow":
+                $('.icon-profil-modif').css('background-color', '#fa9b4b');
             break;
     
         default:

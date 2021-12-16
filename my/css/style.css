@@ -131,7 +131,7 @@ html{
   align-items: center;
   justify-content: space-between;
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-169px);
   z-index: 0;
   transition: 0.3s;
   box-shadow: grey 0 0 3px;
@@ -182,7 +182,6 @@ html{
     opacity: 1;
 }
 .body-all-sec{
-    overflow: auto;
     margin-top: 64px;
 }
 .menu-burger {
@@ -298,5 +297,34 @@ html{
     margin-bottom: 80px;
   }
 }
+/* 
+.form-switch-btn{
 
-/* v-1.0.1 */
+} */
+.btn-contain-switch{
+    width: 40px;
+    height: 21px;
+    background-color: #186b06;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(9);
+    transition: 0.3s;
+    transform-origin: top left;
+}
+.btn-contain-switch-app {
+    background-color: #9d1313;
+}
+.circle-btn-contain-switch{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    border-radius: 100px;
+    margin: 0 2px;
+    transition: 0.3s;
+}
+.circle-btn-contain-switch-app{
+    margin: 21px;
+}

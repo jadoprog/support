@@ -31,14 +31,8 @@ foreach($dbb->query('SELECT * from `message`') as $row) {
         $b->bindParam(":nbr_ticket", $row['id']);
         $b->execute();
 
-
     }
-    $date = new DateTime($row['date']);
-    $date->format('N - j - n - Y : G - i');
-    if ($date->format('N - j - n - Y : G - i')){
 
-    }
-    echo $row['id'] .' | '. $row['id_exp'] .' | '. $row['id_dest'] .' | '. $row['cathegorie'] .' | '. $row['message'] .' | '. $row['status'] .' | '. $row['vue'] .' | '. $row['n_ticket'] .' | '. $date->format('N - j - n - Y : G - i') . '<br><br><br><br>';
 }
 
 $dbb = closeBDD();

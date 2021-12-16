@@ -1,6 +1,6 @@
 <section class="sec-conversation" id="sec-conversation">
 
-    <div class="part-conversation">
+    <!-- <div class="part-conversation">
   
         <div class="part-filtres">
             <div class="title-filtres title-part-ticket">
@@ -94,5 +94,5 @@
                     <button class="btn-send-message">Envoyer</button>
                 </div>
         </div>
-    </div>
+    </div> -->
 </section> 
