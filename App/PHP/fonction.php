@@ -62,7 +62,6 @@ function redirect(string $path){
 
 /**
  * getInfo                      Observe et retourne les informations du compte
- *
  * @param int $option           Entier correspondant au type de retour souhaité
  * @param  mixed $args1         Chine de caracthère coréspondant à la recherche
  * @param mixed|null $args2     Argument facultatif
@@ -105,5 +104,7 @@ function tronquechaine (string $chain, int $longueur_max) {
 
       echo $chain;
     }
-    return false;
+    else{
+        echo $chain;
+    }
 }

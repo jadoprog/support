@@ -1,8 +1,7 @@
 <?php
 
 // importation des fichier
-require("bdd.php");
-require("fonction.php");
+require_once '../../dependancePHP.php';
 
 $new_password = $_POST['new-password'];
 $confirm_new_password = $_POST['confirm-password'];
@@ -41,4 +40,4 @@ foreach($dbh->query('SELECT * from account') as $row) {
 
 $dbh = closeBDD();
 $_SESSION['erreurPass'] = $erreur;
-redirect('../my/?p=02');
+redirect('../../../my?p=02');

@@ -11,7 +11,7 @@
         <div class="indentifiant-settings"><?php getInfo(1, 'pseudo') ?></div>
     </div>
     <div class="account-profil">
-        <form action="../ressources/switchAccount.php" method="post" class="form-settings">
+        <form action="../../App/PHP/process/switchAccount.php" method="post" class="form-settings">
             <div class="title-sec-account">Compte</div>
             <div class="under-title-desc-sec-account">
                 <div class="under-title-sec-account">Profil</div>
@@ -74,7 +74,7 @@
                 <button type="submit">Mettre à jour</button>
             </div>
         </form>
-        <form action="../ressources/switchPass.php" method="post" class="form-settings">
+        <form action="../../App/PHP/process/switchPass.php" method="post" class="form-settings">
             <div class="under-title-desc-sec-account mot-de-passe-title-settings">
                 <div class="under-title-sec-account">Mot de passe</div>
                 <div class="desc-sec-account">Changer votre mot de passe mais attention au voyeur.</div>

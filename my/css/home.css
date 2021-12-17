@@ -222,9 +222,11 @@ svg.svg-inline--fa.fa-door-open.fa-w-20 {
 .message-blc-ticket {
     overflow-y: scroll;
     padding-right: 15px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .message-blc-ticket::-webkit-scrollbar-thumb {
-    border: 2.5px solid #ededed;
+    border: 3px solid #ededed;
     border-radius: 20px;
     background-color: #c1c1c1;
 }
@@ -234,6 +236,12 @@ svg.svg-inline--fa.fa-door-open.fa-w-20 {
 }
 .message-blc-ticket::-webkit-scrollbar {
     width: 15px;
+}
+p.empty-message {
+    font-size: 2em;
+    color: #cdcdcd;
+    font-family: monospace;
+    align-self: center;
 }
 @media screen and (max-width: 1150px) {
     body{
@@ -246,6 +254,7 @@ svg.svg-inline--fa.fa-door-open.fa-w-20 {
     }
     .blc-disc {
         width: 85%;
+        height: 600px;
     }
     .contain-right-home {
         display: flex;

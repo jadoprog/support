@@ -10,109 +10,11 @@
             </div>
         </div>
         <div class="message-blc-ticket">
-        <?php
-            $dbb = openBDD();
-            $n_ticket = [];
-            foreach($dbb->query('SELECT * from `message`') as $row) {
+            <?php
+                $ticket = new Ticket();
+                $ticket::readTicket();
 
-                // Gestion de date
-                $date = new DateTime($row['date']);
-                switch ($date->format('N')) {
-                    case 1:
-                        $day = 'Lundi';
-                        break;
-                    case 2:
-                        $day = 'Mardi';
-                        break;
-                    case 3:
-                        $day = 'Mercredi';
-                        break;
-                    case 4:
-                        $day = 'Jeudi';
-                        break;
-                    case 5:
-                        $day = 'Vendredi';
-                        break;
-                    case 6:
-                        $day = 'Samedi';
-                        break;
-                    case 7:
-                        $day = 'Dimanche';
-                        break;
-                }
-                switch ($date->format('m')) {
-                    case 1:
-                        $month = 'Janvier';
-                        break;
-                    case 2:
-                        $month = 'Fevrier';
-                        break;
-                    case 3:
-                        $month = 'Mars';
-                        break;
-                    case 4:
-                        $month = 'Avril';
-                        break;
-                    case 5:
-                        $month = 'Mai';
-                        break;
-                    case 6:
-                        $month = 'Juin';
-                        break;
-                    case 7:
-                        $month = 'Juillet';
-                        break;
-                    case 8:
-                        $month = 'Aout';
-                        break;
-                    case 9:
-                        $month = 'Septembre';
-                        break;
-                    case 10:
-                        $month = 'Octobre';
-                        break;
-                    case 11:
-                        $month = 'Novembre';
-                        break;
-                    case 12:
-                        $month = 'Decembre';
-                        break;
-                }
-
-                
-
-                if (!in_array($row['n_ticket'], $n_ticket)):
-                    $n_ticket[] = $row['n_ticket'];
-                    foreach($dbb->query('SELECT * from `account`') as $rang) {
-                        if($rang['id'] == $row['id_exp']){
-                            $account = [
-                                'firstname' => $rang['firstname'],
-                                'name' => $rang['name'],
-                                'color' => $rang['color_profil'],
-                                'letter_firstname' => $rang['firstname'][0]
-                            ];
-                        }
-                    }
             ?>
-                <div class="message-blc-disc">
-                    <div class="headband-message-blc-disc">
-                        <div class="expediteur-profil">
-                            <div class="icon-profile prifil-disc <?php  echo $account['color']; ?>"><?php echo $account['letter_firstname']; ?></div>
-                            <div class="name-firstname-profil-headband-blc-disc">
-                                <div class="firstname-profil-blc-disc"><?php echo $account['firstname']; ?></div>
-                                <div class="name-profil-blc-disc"><?php echo $account['name']; ?></div>
-                            </div>
-                        </div>
-                        <div class="date-receive-message"><?php echo $date->format('d') . ' ' . $datePost; ?></div>
-                    </div>
-                    <p class="text-disc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dicta veniam saepe officiis rem porro iusto quia consequatur aliquid .</p>
-                </div>
-                <hr class="separating-bar">
-                <?php
-                    endif;
-                }
-                $dbh = closeBDD();
-                ?>
         </div>
     </div>
 

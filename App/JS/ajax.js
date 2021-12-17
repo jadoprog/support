@@ -28,27 +28,11 @@ var getHttpRequest = function () {
 }
 
 function realoadAccount(){
-    
-    let xhr = getHttpRequest();
-    xhr.open('POST', '../ressources/processAjax.php', true);
-    let data = new FormData();
-    data.append('function', 'reloadAccount');
-    xhr.send(data);
 
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            rep_json = xhr.response;
-            let obj = JSON.parse(rep_json);
-            document.getElementById('name-profil-blc').innerHTML = obj.name;
-            document.getElementById('firstname-profil-blc').innerHTML = obj.firstname;
-            document.getElementById('firstname-menu-blc').innerHTML = obj.firstname;
-            document.getElementById('ident-profil-blc').innerHTML = obj.pseudo;
-            document.getElementById('mail-profil-blc').innerHTML = obj.email;
-            document.getElementById('icon-profil-blc-user').innerHTML = obj.firstname[0];
-        }
-    }
-    // document.getElementById('firstname-profil-blc').innerHTML = 
-    
+    let xhr = getHttpRequest();
+    xhr.open('POST', 'App/PHP/process/updateTicket.php', true);
+    let data = new FormData();
+    data.append('function', 'update');
+    xhr.send(data);
 }
 document.getElementById('svg-reload-account').addEventListener('click', realoadAccount);
-// documeny.getgetElementById('svg-add-ticket').addEventListener('click', )

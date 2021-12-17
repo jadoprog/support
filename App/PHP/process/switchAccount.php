@@ -1,8 +1,6 @@
 <?php
 // Changement d'information de compte
-
-require("bdd.php");
-require("fonction.php");
+require_once '../../dependancePHP.php';
 
 $firstname = htmlspecialchars($_POST['firstname'], ENT_QUOTES);
 $name = htmlspecialchars($_POST['name'], ENT_QUOTES);
@@ -11,7 +9,7 @@ $color = htmlspecialchars($_POST['color'], ENT_QUOTES);
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
     $_SESSION['erreurAccount'] = 1;
-    redirect('../my/?p=02');
+    redirect('../../../my?p=02');
     die();
 }
 
@@ -32,4 +30,4 @@ foreach($dbh->query('SELECT * from account') as $row) {
 }
 
 $dbh = closeBDD();
-redirect('../my/?p=02');
+redirect('../../../my?p=02');

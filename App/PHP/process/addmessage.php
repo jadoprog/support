@@ -1,7 +1,7 @@
 <?php
 require_once '../../dependancePHP.php';
 
-$id_add = 2;
+$id_add = getInfo(3, 'id');
 //$cath = $_POST['cath'];
 $message = "Sehe vient de souligner que non seulement les \"points d'ancrage\" ne sont pas gérés par le processus clone/update, mais aussi les caches, les rerere, etc. Donc, pour une sauvegarde stricte,";
 //$status = 'En attente';

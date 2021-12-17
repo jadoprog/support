@@ -77,5 +77,9 @@ $(".svg-exit-blc-contact-support").click(function(){
     $(".new-ticket").css('display', 'none');
     $("#filtre-body-new").addClass('dn');
 })
-
-// -
+$(window).ready(function (){
+    if ($.trim($('.message-blc-ticket').html()) === ''){
+        $('.message-blc-ticket').html('<p class="empty-message">-- Aucun ticket --</p>');
+    }
+    $('.message-blc-ticket').scrollTop(-$('.message-blc-ticket').height());
+})
